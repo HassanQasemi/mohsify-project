@@ -1,3 +1,5 @@
+/* define color palette */
+
 :root {
   --color-primary: #00d9ff;
   --color-secondary: #2584ff;
@@ -6,6 +8,9 @@
   --color-body: #918ca4;
   --color-body-white: #ffffff;
 }
+
+/* typography */
+
 html {
   /* 62.5% of 16px = 10 px */
   font-size: 62.5%;
@@ -46,5 +51,30 @@ p {
   }
   body {
     font-size: 1.8rem;
+  }
+}
+
+/* links */
+
+a {
+  text-decoration: none;
+}
+.link-arrow {
+  text-transform: uppercase;
+  color: var(--color-red);
+  font-weight: bold;
+  font-size: 2rem;
+}
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
   }
 }
