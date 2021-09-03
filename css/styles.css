@@ -1,10 +1,15 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 /* define color palette */
 
 :root {
   --color-primary: #00d9ff;
   --color-secondary: #2584ff;
-  --color-heading: #5e508f;
-  --color-red: #ff3400;
+  --color-heading: #1b0760;
+  --color-accent: #ff3400;
   --color-body: #918ca4;
   --color-body-white: #ffffff;
   --color-background-icon: #e6f1fc;
@@ -62,7 +67,7 @@ a {
 }
 .link-arrow {
   text-transform: uppercase;
-  color: var(--color-red);
+  color: var(--color-accent);
   font-weight: bold;
   font-size: 2rem;
 }
@@ -168,4 +173,50 @@ a {
     width: 30px;
     height: 30px;
   }
+}
+
+/* buttons */
+
+.btn {
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 2rem 3rem;
+  color: var(--color-body-white);
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+}
+.btn--primary {
+  background-color: var(--color-primary);
+}
+.btn--primary:hover {
+  background-color: #3cd1eb;
+}
+.btn--secondary {
+  background-color: var(--color-secondary);
+}
+.btn--secondary:hover {
+  background-color: #2978df;
+}
+.btn--accent {
+  background-color: var(--color-accent);
+}
+.btn--accent:hover {
+  background-color: #bf2e09;
+}
+.btn--block {
+  width: 100%;
+  display: inline-block;
+  margin: 10px 0px;
+}
+.btn--outline {
+  color: var(--color-heading);
+  border: 2px solid var(--color-heading);
+  background-color: var(--color-body-white);
+}
+.btn--outline:hover {
+  color: var(--color-body-white);
+  background-color: var(--color-heading);
 }
