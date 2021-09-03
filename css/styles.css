@@ -226,3 +226,22 @@ a {
     font-size: 1.4rem;
   }
 }
+
+/*  input  */
+
+.input {
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  color: var(--color-heading);
+  font-size: 2rem;
+  outline: 0;
+  padding: 3rem 5rem;
+}
+::placeholder {
+  color: var(--color-body);
+}
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
+}
