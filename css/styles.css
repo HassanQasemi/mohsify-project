@@ -158,8 +158,16 @@ a {
   width: 40px;
   height: 40px;
 }
+.icon--small {
+  width: 32px;
+  height: 32px;
+}
+
 .icon--secondary {
   fill: var(--color-secondary);
+}
+.icon--white {
+  fill: var(--color-body-white);
 }
 .icon-container {
   width: 80px;
@@ -170,6 +178,9 @@ a {
   flex-wrap: wrap;
   align-content: space-around;
   justify-content: space-around;
+}
+.icon-container--accent {
+  background-color: var(--color-accent);
 }
 @media screen and (min-width: 1024px) {
   .icon-container {
@@ -218,6 +229,10 @@ a {
   width: 100%;
   display: inline-block;
   margin: 10px 0px;
+}
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 .btn--outline {
   color: var(--color-heading);
@@ -403,5 +418,81 @@ a {
   }
   .quote .media__organization {
     font-size: 1.6rem;
+  }
+}
+
+/* grid */
+.grid {
+  display: grid;
+}
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* testimonial */
+
+.testimonial {
+  padding: 3rem 5rem;
+}
+.testimonial__image > img {
+  width: 100%;
+}
+.testimonial__image {
+  position: relative;
+}
+.testimonial__image > .icon-container {
+  position: absolute;
+  top: 25px;
+  right: -40px;
+}
+@media screen and (min-width: 768px) {
+  .testimonial .quote__text {
+    font-size: 2rem;
+  }
+  .testimonial .quote {
+    margin-right: 0px;
+  }
+  .testimonial {
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonial__image > .icon-container {
+    right: -30px;
+  }
+}
+
+/* callout */
+
+.callout--secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-body-white);
+  padding: 4.5rem;
+}
+.callout .callout__heading {
+  color: var(--color-body-white);
+  margin-top: 0;
+}
+
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+}
+.callout__content {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .callout__content {
+    text-align: left;
+  }
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+  .callout .btn {
+    justify-self: start;
+    margin: 0 2rem;
   }
 }
