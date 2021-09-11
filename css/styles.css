@@ -183,6 +183,7 @@ a {
   width: 40px;
   height: 40px;
 }
+
 @media screen and (min-width: 1024px) {
   .icon-container {
     width: 60px;
@@ -243,6 +244,12 @@ a {
 .btn--outline:hover {
   color: var(--color-body-white);
   background-color: var(--color-heading);
+}
+.btn .icon {
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
 }
 @media screen and (min-width: 1024px) {
   .btn {
@@ -644,5 +651,37 @@ a {
   }
   .hero {
     padding-top: 0;
+  }
+}
+
+/* domain block */
+
+.block-domain .input-group {
+  box-shadow: 0px 10px 20px 20px #e6ebee;
+  margin: 4rem 2rem;
+  max-width: 670px;
+  border: none;
+}
+.block-domain__price {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .block-domain__price {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    font-size: 1.5rem;
+  }
+  .block-domain__price .badge {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+  .block-domain .input-group {
+    margin: 4rem auto;
   }
 }
