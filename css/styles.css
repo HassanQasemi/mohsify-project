@@ -37,6 +37,7 @@ h2,
 h3 {
   color: var(--color-heading);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 h1 {
   font-size: 7rem;
@@ -616,5 +617,32 @@ a {
   }
   .nav__toggler {
     display: none;
+  }
+}
+
+/* hero */
+
+.hero__image {
+  width: 100%;
+}
+.hero__body {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+  color: #b9c3cf;
+}
+.hero {
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+}
+.hero__content {
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .hero__content {
+    text-align: left;
+    align-self: center;
+  }
+  .hero {
+    padding-top: 0;
   }
 }
