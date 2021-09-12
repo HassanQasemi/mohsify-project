@@ -783,3 +783,9 @@ a {
     max-width: 700;
   }
 }
+
+/*  block-testimonial */
+
+.block-testimonial .block__header {
+  margin-top: 5rem;
+}
