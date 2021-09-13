@@ -865,3 +865,25 @@ a {
     text-align: center;
   }
 }
+
+/*  responsive small devices */
+
+@media screen and (max-width: 520px) {
+  .input-group .input {
+    width: 0;
+    font-size: 1.4rem;
+  }
+  .block-domain__price {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 6rem);
+  }
+  .input-group .btn {
+    margin: 0px;
+    padding: 2rem 3vh;
+    font-size: 1rem;
+  }
+
+  .btn .icon {
+    margin-right: 0;
+  }
+}
