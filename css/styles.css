@@ -792,6 +792,14 @@ a {
 .block-testimonial .block__header {
   margin-top: 5rem;
 }
+.block-testimonial {
+  margin-bottom: 30rem;
+}
+@media screen and (min-width: 1024px) {
+  .block-testimonial {
+    margin-bottom: 20rem;
+  }
+}
 
 /*  footer */
 
@@ -888,5 +896,42 @@ a {
 
   .btn .icon {
     margin-right: 0;
+  }
+}
+
+/*  footer and callout box */
+.footer {
+  position: relative;
+}
+.footer .callout {
+  width: 80%;
+  max-width: 1140px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  position: absolute;
+  top: -200px;
+}
+.footer__content {
+  padding-top: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .callout .grid {
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .footer__content {
+    padding-top: 200px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer .callout {
+    top: -80px;
+  }
+  .footer__content {
+    padding-top: 100px;
   }
 }
