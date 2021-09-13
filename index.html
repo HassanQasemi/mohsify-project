@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -45,7 +46,7 @@
     </header>
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
+        <header class="block__header hero__content" data-aos="fade-up">
           <h1 class="block__heading">Cloud Hosting for Pros</h1>
           <p class="hero__body">Deploy your website in less than 60 seconds.</p>
           <a href="/" class="btn btn--accent btn--stretched">GET STATED</a>
@@ -64,7 +65,7 @@
         </picture>
       </div>
     </section>
-    <section class="block-domain">
+    <section class="block-domain" data-aos="zoom-in">
       <header class="block__header">
         <h2 class="block__heading">
           The best webhosting Starting at per month
@@ -99,7 +100,7 @@
       </ul>
     </section>
     <section class="plans-block">
-      <div class="plans-block__card">
+      <div class="plans-block__card" data-aos="fade-up" data-aos-duration="300">
         <div class="plan">
           <div class="card card--primary">
             <div class="card__header">
@@ -124,7 +125,7 @@
         </div>
       </div>
 
-      <div class="plans-block__card">
+      <div class="plans-block__card" data-aos="fade-up" data-aos-duration="600">
         <div class="plan plan--popular">
           <div class="card card--secondary">
             <div class="card__header">
@@ -149,7 +150,7 @@
         </div>
       </div>
 
-      <div class="plans-block__card">
+      <div class="plans-block__card" data-aos="fade-up" data-aos-duration="900">
         <div class="plan">
           <div class="card card--primary">
             <div class="card__header">
@@ -175,14 +176,18 @@
       </div>
     </section>
     <section class="block container features-block">
-      <header class="block__header">
+      <header class="block__header" data-aos="fade-down-left">
         <h2>Host Оn Тhe Cloud to Keep Growing</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, magnam?
         </p>
       </header>
       <article class="grid grid--1x2 features">
-        <div class="features__content">
+        <div
+          class="features__content"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <span class="icon-container">
             <svg class="icon icon--secondary">
               <use xlink:href="icons/sprite.svg#easy"></use>
@@ -208,7 +213,11 @@
         </picture>
       </article>
       <article class="grid grid--1x2 features">
-        <div class="features__content">
+        <div
+          class="features__content"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <span class="icon-container">
             <svg class="icon icon--secondary">
               <use xlink:href="icons/sprite.svg#computer"></use>
@@ -234,7 +243,11 @@
         </picture>
       </article>
       <article class="grid grid--1x2 features">
-        <div class="features__content">
+        <div
+          class="features__content"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <span class="icon-container">
             <svg class="icon icon--secondary">
               <use xlink:href="icons/sprite.svg#wordpress"></use>
@@ -260,7 +273,11 @@
         </picture>
       </article>
       <article class="grid grid--1x2 features">
-        <div class="features__content">
+        <div
+          class="features__content"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <span class="icon-container">
             <svg class="icon icon--secondary">
               <use xlink:href="icons/sprite.svg#settings"></use>
@@ -303,7 +320,7 @@
           <img class="showcase__image" src="images/ipad.png" alt="" />
         </picture>
         <div class="showcase__content">
-          <div class="media">
+          <div class="media" data-aos="fade-up">
             <div class="media__image">
               <svg class="icon icon--secondary">
                 <use xlink:href="icons/sprite.svg#menu"></use>
@@ -317,7 +334,7 @@
               </p>
             </div>
           </div>
-          <div class="media">
+          <div class="media" data-aos="fade-up">
             <div class="media__image">
               <svg class="icon icon--secondary">
                 <use xlink:href="icons/sprite2.svg#growth"></use>
@@ -331,7 +348,7 @@
               </p>
             </div>
           </div>
-          <div class="media">
+          <div class="media" data-aos="fade-up">
             <div class="media__image">
               <svg class="icon icon--secondary">
                 <use xlink:href="icons/sprite2.svg#wordpress"></use>
@@ -348,7 +365,7 @@
         </div>
       </div>
     </section>
-    <section class="block-testimonial">
+    <section class="block-testimonial" data-aos="zoom-in">
       <header class="block__header">
         <h2 class="block__heading">What our Customer are Saying</h2>
         <p>
@@ -397,7 +414,7 @@
     <section class="footer">
       <div class="block block--dark footer__block">
         <div class="container">
-          <div class="callout callout--secondary">
+          <div class="callout callout--secondary" data-aos="flip-up">
             <div class="grid grid--1x2">
               <div class="callout__content">
                 <h3 class="callout__heading">Ready To Get Started?</h3>
@@ -476,5 +493,9 @@
     </section>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
